@@ -580,7 +580,7 @@ elif "Disease" in app_mode:
         test_image = st.file_uploader("Choose an image (JPG / PNG / JPEG)", type=["jpg", "jpeg", "png"])
 
         if test_image:
-            st.image(test_image, caption="Uploaded Leaf", use_column_width=True)
+            st.image(test_image, caption="Uploaded Leaf", use_container_width=True)
 
     with col2:
         st.markdown("<p class='section-title' style='font-size:1.1rem;'>🤖 AI Prediction</p>", unsafe_allow_html=True)
